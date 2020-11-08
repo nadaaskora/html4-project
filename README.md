@@ -9,3 +9,4 @@
 * map in about page to locate stores.
 * map in home page to know more about plants.
 * register page which go to home page.
+<img src="images/register.jpg">
