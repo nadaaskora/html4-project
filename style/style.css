@@ -253,37 +253,38 @@ h2 {
 	width: 75%;
 }
 /* read more */
-.readmore {
-	width: 80%;
-	height: 76.8%;
-	margin: 0 auto;
+.readmore table {
+	/* width: 40%; */
 	border: 3px solid #1b2c4d;
+	width: 80%;
+	margin: 100px auto;
 	position: absolute;
-	top: 70px;
 	background-color: #eff4f0;
 	color: #1e2f4f;
 }
+
 .readmore img {
-	float: left;
-	width: 49.8%;
-	position: relative;
+	width: 350px;
 }
+
 .readmore h5,
 .readmore p {
-	position: relative;
-	top: 50px;
-	right: -10px;
+	margin: 10px;
 	padding: 10px;
-	width: 700px;
 }
 .readmore h5 {
 	font-size: 24px;
 }
-.readmore button {
+.readmore table td .header {
+	text-align: center;
+	margin: 10px 0;
+}
+.readmore table td .form-control {
+	margin: 0 30px;
+}
+.readmore input[type="submit"] {
 	padding: 10px 15px;
-	position: relative;
-	top: 50px;
-	margin: 5px;
+	margin: 20px;
 }
 /* about */
 /* locations */
@@ -343,7 +344,8 @@ h2 {
 	margin-bottom: 5px;
 }
 
-.form-control input {
+.form-control input,
+.form-control textarea {
 	border: 2px solid #f0f0f0;
 	border-radius: 8px 4px 8px 4px;
 	display: block;
@@ -353,12 +355,14 @@ h2 {
 }
 
 .form-control input:focus,
-.subscribe input:focus {
+.subscribe input:focus,
+.form-control textarea:focus {
 	outline: 0;
 	border-color: #a9ba5a;
 }
 
-.form button {
+.form button,
+.form-control input[type="submit"] {
 	display: block;
 	font-size: 16px;
 	padding: 10px;

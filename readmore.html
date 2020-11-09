@@ -1,16 +1,15 @@
 <!-- @format -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
 <head>
-	<link
-		rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
 		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-		crossorigin="anonymous"
-	/>
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="style/style.css" />
 	<title>Plant.</title>
 </head>
+
 <body>
 	<div class="container">
 		<!-- navbar -->
@@ -26,31 +25,94 @@
 							<li><a href="about.html">About</a></li>
 							<li><a href="store.html">Store</a></li>
 							<li>
-								<a href="mailto:admin@gmail.com?subject=message from&body ="
-									>Contact</a
-								>
+								<a href="mailto:admin@gmail.com?subject=message from&body =">Contact</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 		</div>
+		<!-- read-more -->
 		<div class="readmore">
-			<div class="card">
-				<img src="images/home-1.jpg" alt="Plant A" />
-				<h5>Plant A</h5>
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
-					aperiam ullam natus incidunt debitis nam illum illo! Quod laudantium,
-					accusamus reiciendis officiis ratione impedit ipsa vel deserunt quos
-					itaque suscipit illo voluptate, similique, repudiandae natus cumque
-					debitis excepturi nulla nihil.
-				</p>
-				<a
-					href="mailto:admin@gmail.com?subject=buy request from&body=Hello,%0d%0a%0d%0a I am username from 12street, cairo.%0d%0a%0d%0aI'd like to buy this plant very soon%0d%0a%0d%0amy number is 132243 please contact me soon."
-					><button class="btn">Ask to buy</button></a
-				>
-			</div>
+			<form id="form" class="form" action="mailto:admin@gmail.com?subject=Message from username" method="POST"
+				enctype="multipart/form-data" name="EmailForm">
+				<table>
+					<tr>
+						<div class="card">
+							<td>
+								<img src="images/home-1.jpg" alt="Plant A" />
+							</td>
+							<td >
+								<h5>Plant A</h5>
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+									aperiam ullam natus incidunt debitis nam illum illo! Quod
+									laudantium, accusamus reiciendis officiis ratione impedit ipsa vel
+									deserunt quos itaque suscipit illo voluptate, similique,
+									repudiandae natus cumque debitis excepturi nulla nihil.
+								</p>
+
+								<!-- <a
+									href="mailto:admin@gmail.com?subject=buy request from&body=Hello,%0d%0a%0d%0a I am username from 12street, cairo.%0d%0a%0d%0aI'd like to buy this plant very soon%0d%0a%0d%0amy number is 132243 please contact me soon."><button
+										class="btn">Ask to buy</button></a> -->
+						</div>
+						</td>
+					</tr>
+					<!-- form -->
+					<tr>
+						<td colspan="2">
+							<div class="header">
+								<h2>Ask to buy</h2>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="form-control">
+								<label for="username">Username</label>
+								<input type="text" placeholder="username" id="username" name="username" required value="username" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="form-control">
+								<label for="email">Email</label>
+								<input type="email" placeholder="email@domain.com" id="email" name="email" required value="a@gmail.com" />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="form-control">
+								<label for="address">Address</label>
+								<input type="text" placeholder="123, Cairo, Egypt" id="address" name="address" required value="123, Cairo"/>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="form-control">
+								<label for="phone">Phone Number</label>
+								<input type="tel" placeholder="phone number" id="phone" name="phone" required value="123456"/>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="form-control">
+								<label>Comments</label>
+								<textarea name="ContactCommentt" rows="6" cols="20"> </textarea><br /><br />
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<input type="submit" value="Ask to buy" class="btn"/>
+						</td>
+					</tr>
+				</table>
+			</form>
 		</div>
 	</div>
 </body>
